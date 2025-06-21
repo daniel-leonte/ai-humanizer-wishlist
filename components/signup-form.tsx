@@ -34,7 +34,7 @@ export default function SignUpForm() {
 
     toast({
       title: "Welcome to the future! 🚀",
-      description: "You're now on the NeuralFlow early access list.",
+      description: "You're now on the AI Humanizer early access list.",
     })
   }
 
@@ -54,7 +54,7 @@ export default function SignUpForm() {
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">You're In! 🎉</h3>
           <p className="text-gray-300 mb-6">
-            Welcome to the NeuralFlow early access program. We'll keep you updated on our progress and notify you as
+            Welcome to the AI Humanizer early access program. We'll keep you updated on our progress and notify you as
             soon as we launch.
           </p>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-sm">
@@ -111,7 +111,7 @@ export default function SignUpForm() {
 
           <div className="space-y-2">
             <Label htmlFor="interests" className="text-white font-medium">
-              What interests you most about NeuralFlow?
+              What interests you most about AI Humanizer?
             </Label>
             <Textarea
               id="interests"

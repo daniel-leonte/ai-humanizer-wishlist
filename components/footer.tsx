@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-black bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent mb-4">
-              NeuralFlow
+              AI Humanizer
             </h3>
             <p className="text-gray-400 max-w-md mb-6">
               The future of productivity is here. Join thousands of innovators already transforming their workflow.
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
-          <p className="text-gray-400 text-sm">© 2025 NeuralFlow. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">© 2025 AI Humanizer. All rights reserved.</p>
         </div>
       </div>
     </footer>

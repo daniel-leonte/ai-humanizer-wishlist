@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NeuralFlow - The Future of Productivity",
+  title: "AI Humanizer - The Future of Productivity",
   description: "Revolutionary AI-powered productivity platform launching 2025",
     generator: 'v0.dev'
 }

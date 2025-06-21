@@ -1,4 +1,4 @@
-# NeuralFlow - Sign-Up Landing Experience
+# AI Humanizer - Sign-Up Landing Experience
 
 A modern, conversion-focused landing page and sign-up experience built with Next.js 15, Tailwind CSS, and Shadcn UI.
 
