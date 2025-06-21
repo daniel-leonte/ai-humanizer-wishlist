@@ -5,14 +5,14 @@ import { Twitter, Github, Linkedin } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-gray-800">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-black bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent mb-4">
               AI Humanizer
             </h3>
-            <p className="text-gray-400 max-w-md mb-6">
+            <p className="text-gray-400 max-w-md">
               The future of productivity is here. Join thousands of innovators already transforming their workflow.
             </p>
 
@@ -32,7 +32,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
+        <div className="border-t border-gray-800 mt-10 pt-8 flex flex-col md:flex-row justify-center items-center">
           <p className="text-gray-400 text-sm">© 2025 AI Humanizer. All rights reserved.</p>
         </div>
       </div>

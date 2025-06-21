@@ -17,13 +17,19 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
+        <div className="max-w-5xl mx-auto space-y-12 animate-fade-in">
+
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full px-4 py-2 text-cyan-300 text-sm font-medium">
+            <Sparkles className="w-4 h-4" />
+            Now in Early Access
+          </div>
 
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight">
+          <h1 className="text-5xl md:text-7xl font-black leading-tight">
             Introducing{" "}
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-              AI Humanizer
+              AI&nbsp;Humanizer
             </span>
           </h1>
 
