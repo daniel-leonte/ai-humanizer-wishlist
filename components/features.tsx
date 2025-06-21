@@ -67,13 +67,6 @@ export default function Features() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <div className="inline-flex items-center gap-4 px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500/10 to-purple-600/10 border border-cyan-500/30">
-            <span className="text-cyan-400 font-medium">Ready to transform your workflow?</span>
-            <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-          </div>
-        </div>
       </div>
     </section>
   )

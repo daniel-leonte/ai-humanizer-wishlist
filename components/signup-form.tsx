@@ -75,10 +75,10 @@ export default function SignUpForm() {
 
       <CardContent className="space-y-6">
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <div className="space-y-2">
               <Label htmlFor="name" className="text-white font-medium">
-                Full Name *
+                Name *
               </Label>
               <Input
                 id="name"
@@ -88,40 +88,25 @@ export default function SignUpForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-cyan-500 focus:ring-cyan-500/20"
-                placeholder="Enter your full name"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="email" className="text-white font-medium">
-                Email Address *
-              </Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-cyan-500 focus:ring-cyan-500/20"
-                placeholder="your@email.com"
+                placeholder="Enter your name"
               />
             </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="company" className="text-white font-medium">
-              Company / Organization
-            </Label>
-            <Input
-              id="company"
-              name="company"
-              type="text"
-              value={formData.company}
-              onChange={handleChange}
-              className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-cyan-500 focus:ring-cyan-500/20"
-              placeholder="Your company name (optional)"
-            />
+          <Label htmlFor="email" className="text-white font-medium">
+            Email Address *
+          </Label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-cyan-500 focus:ring-cyan-500/20"
+            placeholder="your@email.com"
+          />
           </div>
 
           <div className="space-y-2">
@@ -158,28 +143,6 @@ export default function SignUpForm() {
           </Button>
         </form>
 
-        <div className="text-center pt-4">
-          <p className="text-xs text-gray-400">
-            By signing up, you agree to our{" "}
-            <a href="#" className="text-cyan-400 hover:text-cyan-300 underline">
-              Terms of Service
-            </a>{" "}
-            and{" "}
-            <a href="#" className="text-cyan-400 hover:text-cyan-300 underline">
-              Privacy Policy
-            </a>
-          </p>
-        </div>
-
-        {/* Social proof */}
-        <div className="border-t border-gray-700 pt-6">
-          <div className="flex items-center justify-center gap-4 text-sm text-gray-400">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span>10,246 people ahead of you</span>
-            </div>
-          </div>
-        </div>
       </CardContent>
     </Card>
   )

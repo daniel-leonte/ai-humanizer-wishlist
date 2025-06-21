@@ -18,11 +18,6 @@ export default function Hero() {
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-sm font-medium">
-            <Sparkles className="w-4 h-4" />
-            Launching 2025
-          </div>
 
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight">
@@ -59,30 +54,8 @@ export default function Hero() {
                 Early Sign-Up
               </Button>
             </Link>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-gray-600 text-gray-300 hover:border-cyan-500 hover:text-cyan-400 px-8 py-6 text-lg rounded-xl bg-transparent hover:bg-cyan-500/10 transition-all duration-300"
-            >
-              Learn More
-            </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-16 border-t border-gray-800">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400">10K+</div>
-              <div className="text-sm text-gray-400">Waitlist</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400">99.9%</div>
-              <div className="text-sm text-gray-400">Uptime</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400">24/7</div>
-              <div className="text-sm text-gray-400">AI Support</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
