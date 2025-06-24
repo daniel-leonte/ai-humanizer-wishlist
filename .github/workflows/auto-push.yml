@@ -1,0 +1,33 @@
+# .github/workflows/auto-push.yml
+
+name: Auto Push on Others' Commits
+
+on:
+  push:
+    branches:
+      - main  # Adjust to your default branch
+
+# Add permissions to allow write access
+permissions:
+  contents: write
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest
+    if: github.actor != github.repository_owner # Only run if the pusher is not the repository owner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Git
+        run: |
+          git config user.name "Daniel Leonte"
+          git config user.email "leontedaniel37@gmail.com"
+
+      - name: Create empty commit and push
+        run: |
+          git pull
+          git commit --allow-empty -m "Trigger push - Github Actions"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
